@@ -28,12 +28,18 @@ function getSavedColumns() {
 		completeListArray = JSON.parse(localStorage.completeItems);
 		onHoldListArray = JSON.parse(localStorage.onHoldItems);
 	} else {
-		backlogListArray = ["Release the course", "Sit back and relax"];
-		progressListArray = ["Work on projects", "Listen to music"];
-		completeListArray = ["Being cool", "Getting stuff done"];
+		backlogListArray = [
+			"Write the documentation",
+			"Post a technical interview",
+		];
+		progressListArray = ["Work on projects", "Listen to Spotify"];
+		completeListArray = ["Send a PR", "Review my projects code"];
 		onHoldListArray = ["Being uncool"];
 	}
 }
+
+getSavedColumns();
+updateSavedColumns();
 
 // Set localStorage Arrays
 function updateSavedColumns() {
@@ -50,6 +56,9 @@ function updateSavedColumns() {
 			JSON.stringify(listArrays[index])
 		);
 	});
+
+	// Similar as code above(DRY):
+
 	// localStorage.setItem("backlogItems", JSON.stringify(backlogListArray));
 	// localStorage.setItem("progressItems", JSON.stringify(progressListArray));
 	// localStorage.setItem("completeItems", JSON.stringify(completeListArray));
