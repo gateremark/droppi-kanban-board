@@ -35,7 +35,7 @@ function getSavedColumns() {
 	} else {
 		backlogListArray = ["Write the documentation", "Post a technical article"];
 		progressListArray = ["Work on Droppi project", "Listen to Spotify"];
-		completeListArray = ["Send a PR", "Review my projects code"];
+		completeListArray = ["Submit a PR", "Review my projects code"];
 		onHoldListArray = ["Get a girlfriend"];
 	}
 }
