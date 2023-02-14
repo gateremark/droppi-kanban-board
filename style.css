@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
 html {
 	box-sizing: border-box;
 }
@@ -16,7 +18,7 @@ body {
 	background-position: 50% 60%;
 	background-attachment: fixed;
 	color: white;
-	font-family: cursive;
+	font-family: "Neucha", cursive;
 	overflow-y: hidden;
 }
 
