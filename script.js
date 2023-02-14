@@ -33,10 +33,23 @@ function getSavedColumns() {
 		completeListArray = JSON.parse(localStorage.completeItems);
 		onHoldListArray = JSON.parse(localStorage.onHoldItems);
 	} else {
-		backlogListArray = ["Write the documentation", "Post a technical article"];
-		progressListArray = ["Work on Droppi project", "Listen to Spotify"];
-		completeListArray = ["Submit a PR", "Review my projects code"];
-		onHoldListArray = ["Get a girlfriend"];
+		const intro = prompt(
+			"Type 'y' (Yes) if you want to display an Editable Sample? \n(Not typing 'y' will display a plane NEW board.)"
+		);
+		if (intro === "y" || intro === "Y") {
+			backlogListArray = [
+				"Write the documentation",
+				"Post a technical article",
+			];
+			progressListArray = ["Work on Droppi project", "Listen to Spotify"];
+			completeListArray = ["Submit a PR", "Review my projects code"];
+			onHoldListArray = ["Get a girlfriend"];
+		} else {
+			backlogListArray = [];
+			progressListArray = [];
+			completeListArray = [];
+			onHoldListArray = [];
+		}
 	}
 }
 
