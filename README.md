@@ -39,7 +39,7 @@ Once you have the project running, you can perform the following actions:
 A live demo of the Kanban board is available at: [Droppi](https://droppi.vercel.app/)
 
 ## Screenshots
-<div align="center">
+<div align="left">
 <a href="https://droppi.vercel.app/">
    
 ![Droppi](https://gateremark.vercel.app/img/projects/projects_post_4.png)
